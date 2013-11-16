@@ -44,6 +44,18 @@ config LIRC_RPI
 	help
 	  Driver for Homebrew GPIO Port Receiver/Transmitter for the RaspberryPi
 
+config LIRC_RP1
+       tristate "Homebrew GPIO Port Receiver/Transmitter for the RaspberryPi"
+       depends on LIRC
+       help
+         Driver for Homebrew GPIO Port Receiver/Transmitter for the RaspberryPi
+
+config LIRC_XBOX
+       tristate "Homebrew XBOX Receiver for the RaspberryPi"
+       depends on LIRC
+       help
+         Homebrew XBOX Receiver for the RaspberryPi
+
 config LIRC_SASEM
 	tristate "Sasem USB IR Remote"
 	depends on LIRC && USB
